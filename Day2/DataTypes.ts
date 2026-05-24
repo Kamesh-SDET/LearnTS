@@ -36,11 +36,17 @@ This helps catch errors at compile time and provides better code readability and
 - number: Represents numeric values, both integers and floating-point numbers.  
 - string: Represents textual data, enclosed in single quotes (' '), double quotes (" "), or backticks (` `) for template literals.
 - boolean: Represents a logical value that can be either true or false.
+
 - null: Represents the intentional absence of any object value. It is a primitive value that can be assigned to a variable to indicate that it has no value.
+
 - undefined: Represents an uninitialized variable or a variable that has been declared but not assigned a value. It is also a primitive value that can be assigned to a variable to indicate that it has not been initialized.
+
 - symbol: Represents a unique identifier, often used for object property keys. Each symbol is guaranteed to be unique, even if they have the same description. 
-- any: Represents any type of value. It is a special type that can be used to opt-out of type checking and allow any value to be assigned to a variable. However, using any can lead to potential runtime errors, so it's generally recommended to use more specific types whenever possible. 
+
+- any: Represents any type of value. It is a special type that can be used to opt-out of type checking and allow any value to be assigned to a variable. However, using any can lead to potential runtime errors, so it's generally recommended to use more specific types whenever possible. It overrides the type safety provided by TypeScript and should be used with caution.
+
 - void: Represents the absence of a value, typically used as the return type of functions that do not return a value. It indicates that a function does not return anything.
+
 - union types: Represents a value that can be one of several types. It is denoted using the pipe (|) symbol. For example, a variable declared as string | number can hold either a string or a number value. Union types allow for more flexible type definitions while still providing type safety.  */
 
 
