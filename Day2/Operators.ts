@@ -11,6 +11,8 @@ In TypeScript, operators can be categorized into several types, including: */
 - Modulus (%): Returns the remainder of the division of the first operand by the second. For example, 5 % 3 results in 2.
 - Exponentiation (**): Raises the first operand to the power of the second operand. For example, 5 ** 3 results in 125. */  
 //example of arithmetic operators in TypeScript
+
+console.log("Arithmetic Operators:");
 let a = 5;
 let b = 3;
 console.log("Addition:", a + b); // Output: 8
@@ -32,6 +34,8 @@ console.log("Exponentiation:", a ** b); // Output: 125
 //- Exponentiation Assignment (**=): Raises the left operand to the power of the right operand and assigns the result to the left operand. For example, x **= 3 is equivalent to x = x ** 3. */
 
 //example of assignment operators in TypeScript
+
+console.log("Assignment Operators:");
 let x = 5;
 x += 3; // x is now 8
 console.log("Addition Assignment:", x); // Output: 8
@@ -60,6 +64,8 @@ console.log("Exponentiation Assignment:", x); // Output: 1
 - Less Than or Equal To (<=): Checks if the first value is less than or equal to the second. For example, 5 <= 3 results in false. */
 
 //example of comparison operators in TypeScript
+
+console.log("Comparison Operators:");
 let num1 = 5;
 let num2 = 3;
 console.log("Equality (==):", num1 == num2); // Output: false
@@ -80,6 +86,8 @@ console.log("Less Than or Equal To (<=):", num1 <= num2); // Output: false
 - Logical NOT (!): Inverts the boolean value of the operand. For example, !true results in false. */    
 
 //example of logical operators in TypeScript
+
+console.log("Logical Operators:");
 let isSunny = true;
 let isWarm = false;
 console.log("Logical AND (&&):", isSunny && isWarm); // Output: false
@@ -98,6 +106,8 @@ console.log("Logical NOT (!):", !isSunny); // Output: false
 - Unsigned Right Shift (>>>): Shifts the bits of the first operand to the right by the number of positions specified by the second operand, filling in zeros from the left. For example, 5 >>> 1 results in 2. */
 
 //example of bitwise operators in TypeScript
+
+console.log("Bitwise Operators:");
 let bitwiseNum1 = 5; // In binary: 0101             
 let bitwiseNum2 = 3; // In binary: 0011
 console.log("Bitwise AND (&):", bitwiseNum1 & bitwiseNum2); // Output: 1 (In binary: 0001)
