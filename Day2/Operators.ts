@@ -120,4 +120,97 @@ console.log("Unsigned Right Shift (>>>):", bitwiseNum1 >>> 1); // Output: 2 (In 
 
 /* These are some of the most commonly used operators in TypeScript. Understanding how to use these operators effectively can help you write more efficient and readable code. It's important to note that the behavior of some operators may differ when used with different data types, so it's always a good idea to refer to the TypeScript documentation for specific details on operator behavior. */
 
+//6. Ternary Operator
+/* The ternary operator is a shorthand for an if-else statement. It takes three operands: a condition, an expression to execute if the condition is true, and an expression to execute if the condition is false. The syntax is as follows:
+condition ? expressionIfTrue : expressionIfFalse; */    
 
+//example of ternary operator in TypeScript
+
+console.log("Ternary Operator:");
+let isRaining = true;
+let weatherMessage = isRaining ? "It's raining outside." : "It's sunny outside.";
+console.log(weatherMessage); // Output: It's raining outside.
+
+//7.increment and Decrement Operators
+/* Increment and decrement operators are used to increase or decrease the value of a variable by 1, respectively. They include:
+- Increment Operator (++): Increases the value of a variable by 1. For example, if x is 5, then x++ results in 6.
+- Decrement Operator (--): Decreases the value of a variable by 1. For example, if x is 5, then x-- results in 4. */    
+
+//example of increment and decrement operators in TypeScript
+console.log("Increment and Decrement Operators:");
+let count = 5;
+console.log("Initial Count:", count);   
+console.log("After Increment (++):", ++count); // Output: 6
+console.log("After Decrement (--):", --count); // Output: 5
+
+//7.1 Prefix vs Postfix Increment/Decrement
+/* The increment and decrement operators can be used in two forms: prefix and postfix. 
+- Prefix Increment/Decrement: When the operator is placed before the variable (e.g., ++x or --x), the variable is incremented or decremented first, and then its new value is returned.
+- Postfix Increment/Decrement: When the operator is placed after the variable (e.g., x++ or x--), the current value of the variable is returned first, and then the variable is incremented or decremented. */  
+
+//example of prefix vs postfix increment/decrement in TypeScript
+console.log("Prefix vs Postfix Increment/Decrement:");
+let num = 5;
+console.log("Initial Number:", num); 
+console.log("Postfix Increment (num++):", num++); // Output: 5 (num is incremented after the value is returned)
+console.log("Current Number after Postfix Increment:", num); // Output: 6
+num = 5; // Reset num to 5
+console.log("Prefix Increment (++num):", ++num); // Output: 6 (num is incremented before the value is returned)
+console.log("Current Number after Prefix Increment:", num); // Output: 6    
+
+//8. Typeof Operator
+/* The typeof operator is used to determine the type of a variable or expression. It returns a string indicating the type of the operand. For example, typeof 5 results in "number", and typeof "Hello" results in "string". The typeof operator can be useful for debugging and for performing type checks in your code. */
+
+//example of typeof operator in TypeScript
+
+console.log("Typeof Operator:");
+let number = 5;
+let str = "Hello";
+let isTrue = true;
+console.log("Type of number:", typeof number); // Output: "number"
+console.log("Type of str:", typeof str); // Output: "string"
+console.log("Type of isTrue:", typeof isTrue); // Output: "boolean" 
+
+
+//9. Instanceof Operator
+/* The instanceof operator is used to check if an object is an instance of a specific class or constructor function. It returns true if the object is an instance of the specified type, and false otherwise. For example, if you have a class called Person, you can use the instanceof operator to check if an object is an instance of the Person class. */  
+
+//example of instanceof operator in TypeScript
+
+console.log("Instanceof Operator:");    
+class Person {
+    name: string;
+    constructor(name: string) {
+        this.name = name;
+    }
+}
+let person1 = new Person("Alice");
+console.log("Is person1 an instance of Person?", person1 instanceof Person); // Output: true
+console.log("Is person1 an instance of Object?", person1 instanceof Object); // Output: true (since all objects in JavaScript are instances of Object)  
+
+
+//10. In Operator
+/* The in operator is used to check if a specified property exists in an object. It returns true if the property exists, and false otherwise. For example, if you have an object called person with a property called name, you can use the in operator to check if the name property exists in the person object. */   
+
+//example of in operator in TypeScript
+
+console.log("In Operator:");    
+let person = { name: "Alice", age: 30 };
+console.log("Does person have a 'name' property?", "name" in person); // Output: true
+console.log("Does person have a 'height' property?", "height" in person); // Output: false  
+
+/* These are some of the most commonly used operators in TypeScript. Understanding how to use these operators effectively can help you write more efficient and readable code. It's important to note that the behavior of some operators may differ when used with different data types, so it's always a good idea to refer to the TypeScript documentation for specific details on operator behavior. */
+
+//11. Equality vs Strict Equality
+/* The equality operator (==) and the strict equality operator (===) are used to compare values in TypeScript, but they behave differently when it comes to type coercion. 
+- Equality Operator (==): This operator compares two values for equality after performing type coercion if necessary. This means that if the operands are of different types, TypeScript will attempt to convert them to a common type before making the comparison. For example, 5 == "5" results in true because the string "5" is coerced to the number 5 before the comparison is made.
+- Strict Equality Operator (===): This operator compares two values for equality without performing type coercion. This means that if the operands are of different types, the comparison will return false. For example, 5 === "5" results in false because the number 5 and the string "5" are of different types and no coercion is performed. */
+
+//example of equality vs strict equality in TypeScript
+
+console.log("Equality vs Strict Equality:");
+let xAny: any = 5;
+let yAny: any = "5";
+
+console.log("Using == (equality):", xAny == yAny); // Output: true
+console.log("Using === (strict equality):", xAny === yAny); // Output: false
