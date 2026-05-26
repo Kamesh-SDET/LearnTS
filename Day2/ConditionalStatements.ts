@@ -47,27 +47,27 @@ if (score >= 90) {
 
 //example of switch statement
 
-let day = "Monday"; 
+let day:number = 3; 
 switch (day) {
-    case "Monday":
+    case 1:
         console.log("Today is Monday.");    
         break;
-    case "Tuesday":
+    case 2:
         console.log("Today is Tuesday.");           
         break;
-    case "Wednesday":
+    case 3:
         console.log("Today is Wednesday."); 
         break;  
-    case "Thursday":
+    case 4:
         console.log("Today is Thursday."); 
         break;
-    case "Friday":
+    case 5:
         console.log("Today is Friday."); 
         break;
-    case "Saturday":
+    case 6:
         console.log("Today is Saturday."); 
         break;
-    case "Sunday":
+    case 7:
         console.log("Today is Sunday."); 
         break;
     default:
