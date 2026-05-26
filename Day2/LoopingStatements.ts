@@ -81,7 +81,8 @@ const person = {
     city: "New York"
 };
 for (const key in person) {
-  console.log(key + ": " + person[key]);
+  const value = person[key as keyof typeof person];
+  console.log(key + ": " + value);
 }
 
 // Conclusion
