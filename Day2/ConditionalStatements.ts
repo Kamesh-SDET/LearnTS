@@ -75,3 +75,32 @@ switch (day) {
         break;
 }
 
+// In this example, the switch statement checks the value of the variable day and executes the corresponding case block based on its value. If day is 3, it will print "Today is Wednesday." If day does not match any of the cases, it will execute the default block and print "Invalid day."
+
+// Jump Statements in TypeScript are used to alter the flow of control in a program. They allow you to jump to a different part of the code based on certain conditions. Here are some common jump statements in TypeScript:    
+
+//5. break statement
+/* The break statement is used to exit a loop or a switch statement before it has completed all of its iterations or cases. When the break statement is encountered, the control flow of the program will immediately exit the loop or switch statement and continue with the next line of code after it. */
+
+//example of break statement in a loop
+
+for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+        break;
+    }
+    console.log(i);
+} // This will print numbers from 0 to 4 and then exit the loop when i is equal to 5.
+
+
+//6. continue statement
+/* The continue statement is used to skip the current iteration of a loop and move on to the next iteration. When the continue statement is encountered, the control flow of the program will immediately skip the rest of the code inside the loop for the current iteration and continue with the next iteration of the loop. */
+
+//example of continue statement in a loop
+
+for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+        continue;
+    }   
+    console.log(i);
+} // This will print numbers from 0 to 9, but skip the number 5.
+
