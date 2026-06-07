@@ -60,6 +60,17 @@ let filteredArr = arr.filter(x => x > 1); // filteredArr is [5, 3]
 
 // Example:
 let total = arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0); // total is 8 (0 + 0 + 5 + 3) 
+//13. some(): Tests whether at least one element in the array passes the test implemented by the provided function. It returns a Boolean value.
+
+// Example:
+let hasGreaterThanTwo = arr.some(x => x > 2); // hasGreaterThanTwo is true (because 5 and 3 are greater than 2)
+
+// 14. every(): Tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
+
+// Example:
+let allGreaterThanZero = arr.every(x => x > 0); // allGreaterThanZero is true (because 0, 5, and 3 are all greater than 0)
+
+
 
 // Conclusion
 // Arrays in TypeScript come with a variety of built-in methods that allow you to manipulate and work with array data effectively. Understanding these methods can help you perform common operations such as adding, removing, and transforming array elements with ease. By leveraging these methods, you can write cleaner and more efficient code when working with arrays in TypeScript.
