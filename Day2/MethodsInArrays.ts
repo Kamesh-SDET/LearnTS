@@ -82,3 +82,14 @@ console.log("Sum of odd squares: " + sumOfOddSquares); // Output: Sum of odd squ
 // 3. We then use the filter() method to keep only the odd squares (1, 9, and 25).
 // 4. Finally, we use the reduce() method to sum up the odd squares, starting with an initial value of 0.
 // The result is the sum of the odd squares, which is printed to the console.
+
+
+
+// Example to demonstrate the use of all the methods together
+
+const fruitsArray: string[] = ["Apple", "Banana", "Cherry"];
+// Using push to add a new fruit, then using forEach to log each fruit, and finally using indexOf to find the index of a specific fruit
+fruitsArray.push("Date"); // fruitsArray is now ["Apple", "Banana", "Cherry", "Date"]   
+fruitsArray.forEach(fruit => console.log(fruit)); // Logs each fruit to the console
+let indexOfCherry = fruitsArray.indexOf("Cherry"); // indexOfCherry is 2
+console.log("Index of Cherry: " + indexOfCherry); // Output: Index of Cherry: 2 
